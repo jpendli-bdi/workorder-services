@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/fetchComponent/<parameter>')
 def loadData(parameter):
     # for reading also binary mode is important
-    dbfile = open('C:/Users/jpendli/Downloads/ADEL1_metadata.pkl', 'rb')    
+    dbfile = open('/opt/vector/ADEL1_metadata.pkl', 'rb')    
     db = pickle.load(dbfile)
     #for keys in db:
        # print(keys, '=>', db[keys])
